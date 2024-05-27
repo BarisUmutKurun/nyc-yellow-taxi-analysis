@@ -8,8 +8,7 @@ This project focuses on analyzing the NYC Yellow Taxi data to uncover insights a
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Project Details](#project-details)
 - [Contact](#contact)
 
 ## Installation
@@ -34,11 +33,45 @@ To set up this project locally, follow these steps:
 To run the analysis, execute the following commands:
 
 1. Navigate to the src directory:
+   ```bash
    cd src
 2. Run the analysis script:
+   ```bash
    python main.py
 
 The results will be saved in the results directory.
+
+## Project Details
+
+### Task Context
+
+1. Data Source: NYC Yellow Taxi data from [NYC TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
+2. Task Requirements:
+
+   - Calculate the average trip length of all Yellow Taxis for a month.
+
+   - Extend this to a data pipeline that can ingest new data and calculate the 45-day rolling average trip length.
+
+   - Ensure the program is suitable for a production setup.
+
+   - Document how the pipeline would scale to handle data sizes that exceed a single machine's capacity.
+
+### Scaling the Pipeline
+
+To scale the pipeline to handle larger datasets that do not fit on a single machine, the following approaches can be considered:
+
+   - Distributed Computing: Utilize frameworks like Apache Spark or Dask to distribute the processing across multiple nodes.
+
+   - Cloud Services: Leverage cloud-based services such as AWS EMR, Google Cloud Dataproc, or Azure HDInsight to handle large-scale data processing.
+
+   - Data Partitioning: Split the data into smaller, manageable chunks and process them in parallel.
+
+   - Optimized Storage: Use efficient data storage formats like Parquet or ORC, which support columnar storage and efficient compression.
+   
+
+## Contact
+
+For any questions or issues, please contact BarisUmutKurun at bumutkurun@gmail.com
 
 
 
