@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  nyc_taxi_analysis:
+    image: nyc_taxi_trip_analysis:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results

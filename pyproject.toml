@@ -1,0 +1,21 @@
+
+[tool.poetry]
+name = "nyc-taxi"
+version = "0.1.0"
+description = "A description of your project"
+authors = ["Your Name <your.email@example.com>"]
+# Optional: if you have a license
+# license = "MIT"
+
+[tool.poetry.dependencies]
+python = "3.10.12"
+pandas = "^2.2.2"
+matplotlib = "^3.9.0"
+seaborn = "^0.13.2"
+pyarrow = "^16.1.0"
+pyyaml = "^6.0.1"
+pyspark = "^3.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
